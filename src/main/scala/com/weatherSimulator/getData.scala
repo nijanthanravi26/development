@@ -8,7 +8,7 @@ object getData {
     val (place, location) = locationData.cities(Random.nextInt(locationData.cities.length))
       val (latitude, longitude, elevation) = location
       val date=generateTimestamp.dateTime(2010,2020)
-      val temp=temperature.readings(-45,45)
+      val temp=temperature.readings(-45,45).toInt
       val con = weatherCondition.getCondition(temp)
      
       
