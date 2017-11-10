@@ -16,8 +16,8 @@ object generateTimestamp {
     val month = timestamp.getMonth
     
     val timeString=cal.getTime.toString.split("\\s+")
-    val year = timeString(5)
-    val hms = timeString(3)
+    val year = timeString(5).toString
+    val hms = timeString(3).toString
     
     val dateformat = date+"-"+month+"-"+year" "+hms
     dateformat
