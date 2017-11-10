@@ -8,14 +8,14 @@ object getData {
       val (place, location) = locationData.cities(Random.nextInt(locationData.cities.length))
       val (latitude, longitude, elevation) = location
       
-      val datetime=generateTimestamp.dateTime(2010,2020)
-      val dateFormat = datetime.split(",")
-      val date = dateFormat(0)
-      val month = dateFormat(1)
-      val year = dateFormat(2)
-      val hms = dateFormat(3)
-      
-      val timestamp = date+"-"+month+"-"+year" "+hms
+      val timestamp=generateTimestamp.dateTime(2010,2020)
+//      val dateFormat = datetime.split(",")
+//      val date = dateFormat(0)
+//      val month = dateFormat(1)
+//      val year = dateFormat(2)
+//      val hms = dateFormat(3)
+//      
+//      val timestamp = date+"-"+month+"-"+year" "+hms
       
       
       val temp=temperature.readings(-45,45)
