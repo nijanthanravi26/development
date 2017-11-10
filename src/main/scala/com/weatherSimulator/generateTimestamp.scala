@@ -8,7 +8,7 @@ object generateTimestamp {
   def dateTime(startYear: Int, endYear: Int)= {
     
     val cal = Calendar.getInstance(TimeZone.getDefault)
-    cal.set(Calendar.YEAR, startYear + Random.nextInt(Math.abs(endYear - startYear)))
+    cal.set(Calendar.YEAR, startYear + Random.nextInt(endYear - startYear))
     cal.set(Calendar.DAY_OF_YEAR, Random.nextInt(cal.getActualMaximum(Calendar.DAY_OF_YEAR)))
     
     val timestamp=cal.getTime

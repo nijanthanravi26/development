@@ -5,12 +5,12 @@ object getData {
   
   def main(args: Array[String]): Unit = {
   
-    val (city, geo) = locationData.cities(Random.nextInt(locationData.cities.length))
-      val (lat, long, ele) = geo
+    val (place, location) = locationData.cities(Random.nextInt(locationData.cities.length))
+      val (latitude, longitude, elevation) = location
       val date=generateTimestamp.dateTime(2010,2020)
      
       
-      println(city,lat,long,ele,date)
+      println(place,latitude,longitude,elevation,date)
   
 }
 }
