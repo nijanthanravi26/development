@@ -1,7 +1,7 @@
 package com.weatherSimulator
 import scala.util.Random
 
-object getData {
+object weatherReportGenerator {
   
   def main(args: Array[String]): Unit = {
     
