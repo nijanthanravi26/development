@@ -1,6 +1,5 @@
 package com.weatherSimulator
-
-import com.weatherSimulator.locationData
+import scala.util.Random
 
 object getData {
   
@@ -8,7 +7,7 @@ object getData {
   
     val (city, geo) = locationData.cities(Random.nextInt(locationData.cities.length))
       val (lat, long, ele) = geo
-      val elevation = Elevation(ele)
+     
       
       println(lat,long,ele)
   
