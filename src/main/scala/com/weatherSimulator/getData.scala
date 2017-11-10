@@ -7,9 +7,10 @@ object getData {
   
     val (city, geo) = locationData.cities(Random.nextInt(locationData.cities.length))
       val (lat, long, ele) = geo
+      val date=generateTimestamp.dateTime
      
       
-      println(city,lat,long,ele)
+      println(city,lat,long,ele,date)
   
 }
 }
