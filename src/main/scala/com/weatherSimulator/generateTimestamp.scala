@@ -19,7 +19,7 @@ object generateTimestamp {
     val year = timeString(5)
     val hms = timeString(3)
     
-    println(date,month,year,hms)
+    date month year hms
     
   }
   
