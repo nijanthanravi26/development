@@ -5,7 +5,7 @@ object getData {
   
   def main(args: Array[String]): Unit = {
     
-    val iteration=args(0)
+    val iteration=args(0).toInt
     
     for( i <- 0 until iteration)
     {
