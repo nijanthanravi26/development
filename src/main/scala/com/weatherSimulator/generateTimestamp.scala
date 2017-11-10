@@ -5,7 +5,7 @@ import scala.util.Random
 
 object generateTimestamp {
   
-  def dateTime(startYear: Int, endYear: Int):String= {
+  def dateTime(startYear: Int, endYear: Int)= {
     
     val cal = Calendar.getInstance(TimeZone.getDefault)
     cal.set(Calendar.YEAR, startYear + Random.nextInt(Math.abs(endYear - startYear)))
