@@ -9,9 +9,10 @@ object getData {
       val (latitude, longitude, elevation) = location
       val date=generateTimestamp.dateTime(2010,2020)
       val temp=temperature.readings(-45,45)
+      val con = weatherCondition.getCondition(temp)
      
       
-      println(place,latitude,longitude,elevation,date,temp)
+      println(place,latitude,longitude,elevation,date,temp,con)
   
 }
 }
