@@ -6,6 +6,7 @@ object weatherCondition {
     
     var status = "Temp"
     
+    //Generate weather condition based on temperature
     if (temperature > 0 && temperature < 15) {
       status="Rainy"
     } else if (temperature >= 15 && temperature <= 45) {
