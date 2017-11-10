@@ -9,7 +9,7 @@ object getData {
       val (lat, long, ele) = geo
      
       
-      println(lat,long,ele)
+      println(city,lat,long,ele)
   
 }
 }
