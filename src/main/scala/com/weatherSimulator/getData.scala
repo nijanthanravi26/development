@@ -12,7 +12,8 @@ object getData {
       //val con = weatherCondition.getCondition(temp)
      
       
-      println(place,latitude,longitude,elevation,date,temp,con)
+    //  println(place,latitude,longitude,elevation,date,temp,con)
+    println(place,latitude,longitude,elevation,date,temp)
   
 }
 }
