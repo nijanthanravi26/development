@@ -10,6 +10,8 @@ object generateTimestamp {
     val cal = Calendar.getInstance(TimeZone.getDefault)
     cal.set(Calendar.YEAR, startYear + Random.nextInt(endYear - startYear))
     cal.set(Calendar.DAY_OF_YEAR, Random.nextInt(cal.getActualMaximum(Calendar.DAY_OF_YEAR)))
+    cal.set(Calendar.HOUR_OF_DAY,Random.nextInt(23))
+    cal.set(Calendar.MINUTE,Random.nextInt(60))
     
     val timestamp=cal.getTime
     val date = timestamp.getDate
