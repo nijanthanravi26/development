@@ -13,7 +13,7 @@ object getData {
       val pressure=pressureGen.data(800,1200)
       val humidity=humidityGen.data(10,100)
       
-    println(place,latitude,longitude,elevation,date,temp,con,pressure,humidity)
+    println(s"$place,$latitude,$longitude,$elevation,$date,$temp,$con,$pressure,$humidity")
     //println(place,latitude,longitude,elevation,date,temp)
   
 }
