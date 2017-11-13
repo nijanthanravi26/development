@@ -29,7 +29,7 @@ object weatherReportGenerator {
           val humidity=humidityGen.data(10,100)
           
           //Generate Report
-          println(s"$place,$latitude,$longitude,$elevation,$timestamp,$temp,$con,$pressure,$humidity")
+          println(s"$place|$latitude,$longitude,$elevation|$timestamp|$temp|$con|$pressure|$humidity")
     }
   
 }
