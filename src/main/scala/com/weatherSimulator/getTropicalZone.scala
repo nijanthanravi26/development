@@ -1,5 +1,8 @@
 package com.weatherSimulator
 
+//Ref : https://en.wikipedia.org/wiki/Temperate_climate#/media/File:World_map_indicating_tropics_and_subtropics.png
+
+
 object getTropicalZone {
   
   def tropicZone(latitude: Double):String = {

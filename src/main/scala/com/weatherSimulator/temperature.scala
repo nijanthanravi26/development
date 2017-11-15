@@ -1,5 +1,7 @@
 package com.weatherSimulator
 
+//Ref : https://content.meteoblue.com/en/meteoscool/general-climate-zones/tropical-zone
+
 import scala.util.Random
 
 object temperature {

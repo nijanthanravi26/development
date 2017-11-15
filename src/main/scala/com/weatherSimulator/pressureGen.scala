@@ -1,16 +1,17 @@
 package com.weatherSimulator
 
+// REF : https://www.quora.com/How-do-I-calculate-altitude-based-on-air-pressure
+// REF : https://www.britannica.com/science/atmospheric-pressure
+
 import scala.util.Random
 
 object pressureGen {
   
-  def data(minPres: Int, maxPres: Int):Int= {
-    
-    //Generate random value in the range of given MIN - MAX value
-    val temp = minPres + Random.nextInt(maxPres-minPres)
-    
-    temp
-    
+  val SeaLevelPressure=1013.25
+  val scaleHeight=7000
+  
+  def data(elevation:Double): Double = {
+     SeaLevelPressure * Math.pow(Math.E,-(elevation / scaleHeight ))
   }
   
 }
