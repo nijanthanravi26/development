@@ -16,9 +16,9 @@ object temperature {
       tempScale(0,40)
     } else if (zone=="Sub_Tropical_Zone") {
        tempScale(-5,50)
-    } else if (zone="Temperate_Zone") {
+    } else if (zone=="Temperate_Zone") {
        tempScale(-30,30)
-    } else if (zone="Cold_Zone" ) {
+    } else if (zone=="Cold_Zone" ) {
       tempScale(-90,25)
     }else {
       tempScale(0,0)
