@@ -3,8 +3,7 @@ import scala.util.Random
 
 /**
 Author Nijanthan Ravi
-Created at : 10/11/2017.
-Last Modified : 10/11/2017 
+Created at : 10/13/2017.
 */
 
 object weatherReportGenerator {
