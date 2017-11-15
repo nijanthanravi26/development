@@ -25,7 +25,7 @@ object weatherReportGenerator {
           val temp=temperature.zoneTemp(getTropicalZone.tropicZone(latitude))
           val con = weatherCondition.getCondition(temp)
           val pressure=pressureGen.data(elevation).round
-          val humidity=humidityGen.data(10,100)
+          val humidity=humidityGen.formula(temp)
           
           //Generate Report
           println(s"$place|$latitude,$longitude,$elevation|$timestamp|$temp|$con|$pressure|$humidity")

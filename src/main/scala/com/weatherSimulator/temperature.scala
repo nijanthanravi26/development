@@ -12,6 +12,8 @@ object temperature {
     temp
   }
   
+  //Predict the temperature based on Tropical Zone
+  
   def zoneTemp(zone:String):Int={
     
     if (zone=="Tropical_Zone") {

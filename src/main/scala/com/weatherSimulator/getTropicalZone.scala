@@ -9,7 +9,8 @@ object getTropicalZone {
     
     var zone = "Temp"
     
-    //Generate weather condition based on temperature
+    //Classify tropical zone based LATITUDE of the given location.
+    
     if (latitude > 0 && latitude <= 23) {
       zone="Tropical_Zone"
     } else if (latitude > 23 && latitude <= 40) {
