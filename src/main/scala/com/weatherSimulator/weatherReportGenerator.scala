@@ -23,7 +23,8 @@ object weatherReportGenerator {
           val timestamp=generateTimestamp.dateTime(2010,2020)
         
           //Get weather data
-          val temp=temperature.readings(-45,45)
+          //val temp=temperature.readings(-45,45)
+          val temp=temperature.zoneTemp(getTropicalZone(latitude))
           val con = weatherCondition.getCondition(temp)
           val pressure=pressureGen.data(800,1200)
           val humidity=humidityGen.data(10,100)
