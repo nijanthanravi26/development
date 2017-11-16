@@ -2,7 +2,7 @@
 
 Weather Simulator:
 
-Generator random weather data set based on input number.
+Generate random weather data set based on input dataset count.
 
 To Run:
 
